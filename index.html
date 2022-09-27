@@ -7,26 +7,69 @@
         
     </head>
     <body class = "shell">
+        
 
         <h6 onclick="moveLeft()" id="header">hi.</h6>
         <script>
             function moveLeft() {
                 var headerText = document.querySelector('#header');
+                var aboutText = document.querySelectorAll('.aHead, .wHead, .aBody, .wBody');
+                // var workText = document.querySelectorAll('.work');
                 if (headerText.style.left === "30%") {
                     headerText.style.left = "50%";
                 } else {
                     headerText.style.left = "30%";
                 }
+                for (i=0; i<aboutText.length; i++) {
+                    if (headerText.style.left === "30%") {
+                        aboutText[i].style.left = "50%";
+                        aboutText[i].style.opacity = "1";
+                    } else {
+                        aboutText[i].style.left = "35%";
+                        aboutText[i].style.opacity = "0";
+                    }        
+                }
             }
         </script>
 
 
-        <p class="about head">i am</p>
-        <p class="about body"><span class="name">Haibin Yu</span>, an electrical engineering & computer science 
+        <p class="about aHead">i am</p>
+        <p class="about aBody"><span class="aName">Haibin Yu</span>, an electrical engineering & computer science 
             student <br> @ UC Berkeley with interests in web development, 
-            design, and <br> softwere engineering.</p>
-        <p class="work">some projects i have worked on:</p>
-        <p class="work"></p>
+            design, <br> data science, and software engineering.</p>
+
+
+        <p class="work wHead">some of my class projects:</p>
+        <ul class="work wBody">
+            <li>
+                <span class="wName">Gitlet:</span> Implemented own local version-control system <br>
+                software with commands commit, branch, log, merge, <br>
+                & rebase. Java
+            </li>
+            <li>
+                <span class="wName">BearMaps:</span> Implemented a basic maps system with the <br>
+                use of the shortest path algorithm (A*), MinPQs, and <br>
+                Trie Trees. Java
+            </li>
+            <li>
+                <span class="wName">CPU:</span> Implemented a 2-stage pipeline logic of a RISC-V <br>
+                processor. The implementation consisted on building <br> 
+                everything from the Arithmetic Logic Unit (ALU) to <br> 
+                the control logic of the CPU supporting instructions all <br> 
+                the way from addi to csrwi rd. Logisim
+            </li>
+            <li>
+                <span class="wName">Ants:</span> Created a tower defense game inspired by PopCap <br> 
+                Games' Plants vs Zombies where the player populates its <br> 
+                colony with the bravest ants to protect its queen from the <br> 
+                evil bees. Python
+            </li>
+            <li>
+                <span class="wName">Movie Classification:</span> Built a classification model that <br> 
+                guesses a movie genre by using the number of times <br> 
+                chosen words appear in the movie's screenplay. Python
+            </li>
+        </ul>
         
     </body>
 </html>
