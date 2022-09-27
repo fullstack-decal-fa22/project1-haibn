@@ -2,15 +2,9 @@
     background-color: black;
 }
 
-/* .box {
-    display: flex;
-    align-self: center;
-    justify-content: center;   
-} */
-
 #header {
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"Space Mono";
     font-size:medium;
     font-weight: 100;
     transform: scale(1, 1.05);
@@ -20,4 +14,33 @@
     top: 38%;
     left: 50%;
     transition: left 1s ease-out 100ms, color 1s ease-out 100ms;
+}
+
+.about{
+    color: white;
+    /* font-family:"Space Mono"; */
+    font-size: medium;
+    font-weight: 100;
+    transform: scale(1, 1.05);
+}
+
+.body {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transition: left 1s ease-out 100ms, color 1s ease-out 100ms;
+}
+
+.head {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transition: left 1s ease-out 100ms, color 1s ease-out 100ms;
+}
+
+.name {
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: normal;
 }
