@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="Haibin Yu" content="Haibin Yu">
+        <title>Haibin's Website</title>
+        
+    </head>
+    <body class = "shell">
+
+        <h6 onclick="moveLeft()" id="header">me.</h6>
+        <script>
+            function moveLeft() {
+                var headerText = document.querySelector('#header');
+                if (headerText.style.left === "30%") {
+                    headerText.style.left = "50%";
+                } else {
+                    headerText.style.left = "30%";
+                }
+            }
+        </script>
+
+
+        <p class="about">i am</p>
+        <p>Haibin Yu, an electrical engineering & computer science 
+            student @ UC Berkeley with interests in web development, 
+            design, and softwere engineering.</p>
+        <p class="work">some projects i have worked on:</p>
+        <p class="work"></p>
+        
+    </body>
+</html>
