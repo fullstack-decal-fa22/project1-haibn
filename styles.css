@@ -35,6 +35,7 @@ body {
     top: 15%;
     left: 35%;
     opacity: 0;
+    visibility: hidden;
 }
 
 .aBody {
@@ -42,6 +43,7 @@ body {
     top: 35%;
     left: 35%;
     opacity: 0;
+    visibility: hidden;
 }
 
 .aName {
@@ -56,6 +58,7 @@ body {
     top: -10%;
     left: 35%;
     opacity: 0;
+    visibility: hidden;
 }
 
 .wBody {
@@ -63,6 +66,12 @@ body {
     top: 10%;
     left: 35%;
     opacity: 0;
+    visibility: hidden;
+}
+
+.text--show {
+    visibility: visible;
+    opacity: 100%;
 }
 
 .contact-container {
@@ -87,6 +96,7 @@ body {
     position: relative;
     /* left: -20.5%; */
     left: -5%;
+    visibility: hidden;
     opacity: 0;
 }
 
@@ -94,6 +104,7 @@ body {
     position: relative;
     /* left: -20.5%; */
     left: -5%;
+    visibility: hidden;
     opacity: 0;
 }
 
@@ -101,7 +112,13 @@ body {
     position: relative;
     /* left: -20.5%; */
     left: -5%;
+    visibility: hidden;
     opacity: 0;
+}
+
+.img--show {
+    visibility: visible;
+    opacity: 100%;
 }
 
 /* Ripple effect */
@@ -113,13 +130,12 @@ body {
     background: gray radial-gradient(circle, transparent 1%, gray 1%) center/15000%;
 }
 .ripple:active {
-    background-color: lightblue;
     background-size: 100%;
     transition: background 0s;
 }
 
 /* Button style */
-button {
+.btn {
     position: absolute;
     /* top: 52%;
     left: 29.84%; */
@@ -136,5 +152,12 @@ button {
     box-shadow: 0 0 4px #999;
     outline: none;
     visibility: hidden;
-    opacity: 0;
+    opacity: 0%;
+    /* transition: opacity 1s, background 0.8s; */
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out, background 0.8s;
+}
+
+.btn--show {
+  visibility: visible;
+  opacity: 100%;
 }
