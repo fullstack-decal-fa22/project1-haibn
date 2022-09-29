@@ -1,4 +1,7 @@
-* {
+/* * {
+    background-color: black;
+} */
+body {
     background-color: black;
 }
 
@@ -32,8 +35,6 @@
     top: 15%;
     left: 35%;
     opacity: 0;
-    /* transition: left 0.7s ease-out 100ms,
-    opacity 1s ease-out 100ms; */
 }
 
 .aBody {
@@ -41,8 +42,6 @@
     top: 35%;
     left: 35%;
     opacity: 0;
-    /* transition: left 0.8s ease-out 100ms, 
-    opacity 1s ease-out 100ms; */
 }
 
 .aName {
@@ -57,8 +56,6 @@
     top: -10%;
     left: 35%;
     opacity: 0;
-    /* transition: left 0.9s ease-out 100ms, 
-    opacity 1s ease-out 100ms; */
 }
 
 .wBody {
@@ -66,8 +63,6 @@
     top: 10%;
     left: 35%;
     opacity: 0;
-    /* transition: left 1s ease-out 100ms, 
-    opacity 1s ease-out 100ms; */
 }
 
 .contact-container {
@@ -107,4 +102,34 @@
     /* left: -20.5%; */
     left: -5%;
     opacity: 0;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+.ripple:hover {
+    background: gray radial-gradient(circle, transparent 1%, gray 1%) center/15000%;
+}
+.ripple:active {
+    background-color: lightblue;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+/* Button style */
+button {
+    position: absolute;
+    left: 50%;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 11px;
+    font-size: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 4px #999;
+    outline: none;
 }

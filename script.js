@@ -57,3 +57,27 @@ function moveLeft() {
         }        
     }
 }
+
+function changeTheme() {
+    docBody = document.body
+    textColor = document.querySelectorAll('#header, .about, .work');
+    gitImg = document.getElementById('git');
+    emailImg = document.getElementById('em');
+    if (docBody.style.backgroundColor === 'white') {
+        docBody.style.backgroundColor = 'black';
+        gitImg.src = 'imgs/githubWhite.png';
+        emailImg.src = 'imgs/emailWhite.png';
+    } else {
+        docBody.style.backgroundColor = 'white';
+        gitImg.src = 'imgs/github.png';
+        emailImg.src = 'imgs/email.png';
+    }
+    
+    for (i=0; i<textColor.length; i++) {
+        if (docBody.style.backgroundColor === 'white') {
+            textColor[i].style.color = 'black';
+        } else {
+            textColor[i].style.color = 'white';
+        }
+    }
+}
