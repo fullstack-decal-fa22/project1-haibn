@@ -15,11 +15,36 @@
             function moveLeft() {
                 var headerText = document.querySelector('#header');
                 var aboutText = document.querySelectorAll('.aHead, .wHead, .aBody, .wBody');
+                var contactImgs = document.querySelectorAll('.github, .linkedin, .email');
                 if (headerText.style.left === "30%") {
                     headerText.style.left = "50%";
+
+                    aboutText[0].style.transition = "left 0.7s ease-out 100ms, opacity 1s ease-out 100ms";
+                    aboutText[1].style.transition = "left 0.9s ease-out 100ms, opacity 1s ease-out 100ms";
+                    aboutText[2].style.transition = "left 0.8s ease-out 100ms, opacity 1s ease-out 100ms";
+                    aboutText[3].style.transition = "left 1s ease-out 100ms, opacity 1s ease-out 100ms";
+                    
+                    contactImgs[0].style.transition = "left 0.9s ease-out 100ms, opacity 0.7s";
+                    contactImgs[1].style.transition = "left 0.8s ease-out 100ms, opacity 0.6s";
+                    contactImgs[2].style.transition = "left 0.7s ease-out 100ms, opacity 0.5s";
                 } else {
                     headerText.style.left = "30%";
+                    
+                    aboutText[0].style.transition = "left 0.7s ease-out 100ms, opacity 1s ease-out 100ms";
+                    aboutText[1].style.transition = "left 0.9s ease-out 100ms, opacity 1s ease-out 100ms";
+                    aboutText[2].style.transition = "left 0.8s ease-out 100ms, opacity 1s ease-out 100ms";
+                    aboutText[3].style.transition = "left 1s ease-out 100ms, opacity 1s ease-out 100ms";
+
+                    // aboutText[0].style.transition = "left 0.9s ease-out 100ms, opacity 0.7s";
+                    // aboutText[1].style.transition = "left 0.8s ease-out 100ms, opacity 0.6s";
+                    // aboutText[2].style.transition = "left 0.7s ease-out 100ms, opacity 0.5s";
+                    // aboutText[3].style.transition = "left 0.7s ease-out 100ms, opacity 0.5s";
+
+                    contactImgs[0].style.transition = "left 0.7s ease-out 100ms, opacity 2.8s ease-out 0.03s";
+                    contactImgs[1].style.transition = "left 0.8s ease-out 100ms, opacity 2.9s ease-out 0.13s";
+                    contactImgs[2].style.transition = "left 0.9s ease-out 100ms, opacity 3s ease-out 0.23s";
                 }
+
                 for (i=0; i<aboutText.length; i++) {
                     if (headerText.style.left === "30%") {
                         aboutText[i].style.left = "50%";
@@ -27,6 +52,18 @@
                     } else {
                         aboutText[i].style.left = "35%";
                         aboutText[i].style.opacity = "0";
+                    }        
+                }
+
+                for (i=0; i<contactImgs.length; i++) {
+                    if (headerText.style.left === "30%") {
+                        contactImgs[i].style.left = "-20.1%";
+                        contactImgs[i].style.opacity = "1";
+                        // contactImgs[i].style.transition = "opacity 1s"
+                    } else {
+                        contactImgs[i].style.left = "-5%";
+                        contactImgs[i].style.opacity = "0";
+                        // contactImgs[i].style.transition = "left 0.9s ease-out 100ms, opacity 1s ease-out 100ms";
                     }        
                 }
             }
@@ -73,5 +110,23 @@
             </ul>
         </div>
         
+        <div class="contact-container">
+            <!-- <div class="contact github"> -->
+                <a href="https://github.com/haibn" class="contact github">
+                    <img src="imgs/githubWhite.png" alt="github logo" class="contact-img">
+                </a>
+            <!-- </div> -->
+            <!-- <div class="contact linkedin"> -->
+                <a href="https://www.linkedin.com/in/haibinyu/" class="contact linkedin">
+                    <img src="imgs/linkedin.jpg" alt="linkedin logo" class="contact-img">
+                </a>
+            <!-- </div> -->
+            <!-- <div class="contact email"> -->
+                <a class="contact email">
+                    <img src="imgs/emailWhite.png" alt="email logo" class="contact-img">
+                </a>
+            <!-- </div> -->
+        </div>
+
     </body>
 </html>
