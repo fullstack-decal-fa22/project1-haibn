@@ -7,17 +7,21 @@ body {
 
 #header {
     color: white;
-    font-family:"Space Mono";
+    /* font-family:"Space Mono"; */
     font-size:medium;
     font-weight: 100;
     transform: scale(1, 1.05);
 
     /* position text in the middle of the website */
-    position: fixed;
+    position: absolute;
     top: 38%;
     left: 50%;
     transition: left 1s ease-out 100ms;
     z-index: 2;
+}
+
+#header:hover {
+    cursor: pointer;
 }
 
 .about, .work{
@@ -79,7 +83,7 @@ body {
     justify-content: center;
     align-content: center;
     position: static;
-    top: 55%;
+    /* top: 55%; */
     z-index: 0;
 }
 
@@ -160,4 +164,29 @@ body {
 .btn--show {
   visibility: visible;
   opacity: 100%;
+}
+
+.more-about-me-container{
+    display: none;
+    justify-content: center;
+    grid-template-columns: repeat(3, 230px);
+    grid-gap: 20px;
+    /* background-color: green; */
+    margin-top: 20%;
+    text-align: center;
+    /* top: 10px; */
+}
+
+.photo {
+    position: relative;
+    width: 100%;
+}
+
+.more-about-me {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.text {
+    color: white;
 }

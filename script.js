@@ -3,6 +3,7 @@ function moveLeft() {
     let aboutText = document.querySelectorAll('.aHead, .aBody, .wHead, .wBody');
     let contactImgs = document.querySelectorAll('.github, .linkedin, .email');
     let btn = document.querySelector('.btn');
+    let moreAboutMe = document.querySelector('.more-about-me-container');
     console.log(aboutText)
     if (headerText.style.left === "30%") {
         headerText.style.left = "50%";
@@ -23,6 +24,7 @@ function moveLeft() {
         contactImgs[2].style.transition = "left 0.7s ease-out 100ms, opacity 0.5s, visibility 1s ease-in-out";
         
         btn.classList.remove('btn--show');
+        moreAboutMe.style.display = 'none';
     } else {
         headerText.style.left = "30%";
         
@@ -42,6 +44,7 @@ function moveLeft() {
         contactImgs[2].style.transition = "left 0.9s ease-out 100ms, opacity 3s ease-out 0.13s, visibility 1s ease-in-out";
         
         btn.classList.add('btn--show');
+        moreAboutMe.style.display = 'grid';
     }
 
     for (i=0; i<aboutText.length; i++) {
@@ -71,6 +74,7 @@ function changeTheme() {
     let gitImg = document.getElementById('git');
     let emailImg = document.getElementById('em');
     let btn = document.querySelector('button');
+    let moreAboutMeText = document.querySelectorAll('.text');
     if (docBody.style.backgroundColor === 'white') {
         docBody.style.backgroundColor = 'black';
         gitImg.src = 'imgs/githubWhite.png';
@@ -81,6 +85,14 @@ function changeTheme() {
         gitImg.src = 'imgs/github.png';
         emailImg.src = 'imgs/email.png';
         btn.style.backgroundColor = 'black';
+    }
+    
+    for (i=0; i<moreAboutMeText.length; i++) {
+        if (docBody.style.backgroundColor === 'white') {
+            moreAboutMeText[i].style.color = 'black';
+        } else {
+            moreAboutMeText[i].style.color = 'white';
+        }
     }
     
     for (i=0; i<textColor.length; i++) {
