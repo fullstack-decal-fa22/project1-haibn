@@ -61,21 +61,15 @@
         
         <!-- CONTACT SECTION  -->
         <div class="contact-container">
-            <!-- <div class="contact github"> -->
-                <a href="https://github.com/haibn" class="contact github" target="_blank">
-                    <img src="imgs/githubWhite.png" alt="github logo" class="contact-img" id="git">
-                </a>
-            <!-- </div> -->
-            <!-- <div class="contact linkedin"> -->
-                <a href="https://www.linkedin.com/in/haibinyu/" class="contact linkedin" target="_blank">
-                    <img src="imgs/linkedin.jpg" alt="linkedin logo" class="contact-img">
-                </a>
-            <!-- </div> -->
-            <!-- <div class="contact email"> -->
-                <a class="contact email" target="_blank">
-                    <img src="imgs/emailWhite.png" alt="email logo" class="contact-img" id="em">
-                </a>
-            <!-- </div> -->
+            <a href="https://github.com/haibn" class="contact github" target="_blank">
+                <img src="imgs/githubWhite.png" alt="github logo" class="contact-img" id="git">
+            </a>
+            <a href="https://www.linkedin.com/in/haibinyu/" class="contact linkedin" target="_blank">
+                <img src="imgs/linkedin.jpg" alt="linkedin logo" class="contact-img">
+            </a>
+            <a class="contact email" target="_blank">
+                <img src="imgs/emailWhite.png" alt="email logo" class="contact-img" id="em">
+            </a>
         </div>
 
         <!-- BUTTON  -->
@@ -84,12 +78,24 @@
         <!-- MORE ABOUT ME  -->
         <div class="more-about-me-container">
             <p class="text more-about-me">more about me:</p>
-            <img src="imgs/placeHolder.png" alt="email logo" class="photo from">
-            <img src="imgs/placeHolder.png" alt="email logo" class="photo hobby">
-            <img src="imgs/placeHolder.png" alt="email logo" class="photo music">
+            <div class="photo from">
+                <img src="imgs/from/from.png" alt="Where I am from" class="locations locations-color">
+                <img src="imgs/from/from bnw.png" alt="Where I am from" class="locations locations-bnw">
+            </div>
+            <div class="photo hobby">
+                <img src="imgs/hobbies/hobbies.png" alt="Hobbies" class="hobbies hobbies-color">
+                <img src="imgs/hobbies/hobbies bnw.png" alt="Hobbies" class="hobbies hobbies-bnw">
+            </div>
+            <div class="photo music">
+                <audio id="song" src="music/YOASOBI Gunjou.mp3"></audio>
+                <img src="imgs/music/yoasobi.png" alt="Music" class="artist artist-color">
+                <img src="imgs/music/yoasobi bnw.png" alt="Music" class="artist artist-bnw" onmouseover="document.getElementById('song').play()"
+                 onmouseout="document.getElementById('song').pause(); document.getElementById('song').currentTime = 0">
+                <div id="spacer"></div>
+            </div>
             <p class="text from-text">i was born in China, raised in Mexico, Mexico City, and now living in the Bay Area</p>
-            <p class="text hobby-text">recently, I found a big interest in photography and video editing</p>
-            <p class="text music-text">Yoasobi's music's so good</p>
+            <p class="text hobby-text">recently, I found interest in photography and video editing. i also love gaming</p>
+            <p class="text music-text">Yoasobi's music is so good</p>
         </div>
     </body>
 </html>

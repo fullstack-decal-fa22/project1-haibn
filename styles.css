@@ -24,6 +24,8 @@ body {
     cursor: pointer;
 }
 
+/* ABOUT & WORK SECTION  */
+
 .about, .work{
     color: white;
     /* font-family:"Space Mono"; */
@@ -78,6 +80,8 @@ body {
     opacity: 100%;
 }
 
+/* CONTACT SECTION */
+
 .contact-container {
     display: flex;
     justify-content: center;
@@ -125,7 +129,9 @@ body {
     opacity: 100%;
 }
 
-/* Ripple effect */
+/* BUTTON  */
+
+/* ripple effect */
 .ripple {
     background-position: center;
     transition: background 0.8s;
@@ -138,7 +144,7 @@ body {
     transition: background 0s;
 }
 
-/* Button style */
+/* button style */
 .btn {
     position: absolute;
     /* top: 52%;
@@ -162,9 +168,11 @@ body {
 }
 
 .btn--show {
-  visibility: visible;
-  opacity: 100%;
+    visibility: visible;
+    opacity: 100%;
 }
+
+/* MORE ABOUT ME SECTION */
 
 .more-about-me-container{
     display: none;
@@ -172,7 +180,7 @@ body {
     grid-template-columns: repeat(3, 230px);
     grid-gap: 20px;
     /* background-color: green; */
-    margin-top: 20%;
+    margin-top: 18%;
     text-align: center;
     /* top: 10px; */
 }
@@ -189,4 +197,74 @@ body {
 
 .text {
     color: white;
+}
+
+/* where am i from */
+
+.locations-bnw {
+    transition: opacity 1s;
+}
+
+.locations-bnw:hover {
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+
+.from {
+    position: relative;
+}
+
+.locations {
+    position: absolute;
+    width: inherit;
+    display: block;
+}
+
+/* hobbies  */
+
+.hobbies-bnw {
+    transition: opacity 1s;
+}
+
+.hobbies-bnw:hover {
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+
+.hobby {
+    position: relative;
+}
+
+.hobbies {
+    position: absolute;
+    width: inherit;
+    display: block;
+}
+
+/* music  */
+
+.artist-bnw {
+    transition: opacity 1s;
+}
+
+.artist-bnw:hover {
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+
+.music {
+    position: relative;
+}
+
+.artist {
+    position: absolute;
+    width: inherit;
+    display: block;
+}
+
+#spacer {
+    height: 330px;
 }
