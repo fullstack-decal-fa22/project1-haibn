@@ -1,13 +1,12 @@
-/* * {
-    background-color: black;
-} */
+* {
+    font-family:'Times New Roman', Times, serif;
+}
 body {
     background-color: black;
 }
 
 #header {
     color: white;
-    /* font-family:"Space Mono"; */
     font-size:medium;
     font-weight: 100;
     transform: scale(1, 1.05);
@@ -28,7 +27,6 @@ body {
 
 .about, .work{
     color: white;
-    /* font-family:"Space Mono"; */
     font-size: medium;
     font-weight: 100;
     transform: scale(1, 1.05);
@@ -53,8 +51,6 @@ body {
 }
 
 .aName {
-    /* font-family:Arial, Helvetica, sans-serif; */
-    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: normal;
 }
@@ -102,7 +98,6 @@ body {
 
 .github {
     position: relative;
-    /* left: -20.5%; */
     left: -5%;
     visibility: hidden;
     opacity: 0;
@@ -110,7 +105,6 @@ body {
 
 .linkedin {
     position: relative;
-    /* left: -20.5%; */
     left: -5%;
     visibility: hidden;
     opacity: 0;
@@ -118,7 +112,6 @@ body {
 
 .email {
     position: relative;
-    /* left: -20.5%; */
     left: -5%;
     visibility: hidden;
     opacity: 0;
@@ -147,8 +140,6 @@ body {
 /* button style */
 .btn {
     position: absolute;
-    /* top: 52%;
-    left: 29.84%; */
     top: 2%;
     left: 1%;
     border: none;
@@ -163,7 +154,6 @@ body {
     outline: none;
     visibility: hidden;
     opacity: 0%;
-    /* transition: opacity 1s, background 0.8s; */
     transition: opacity 1s ease-in-out, visibility 1s ease-in-out, background 0.8s;
 }
 
@@ -179,10 +169,8 @@ body {
     justify-content: center;
     grid-template-columns: repeat(3, 230px);
     grid-gap: 20px;
-    /* background-color: green; */
     margin-top: 18%;
     text-align: center;
-    /* top: 10px; */
 }
 
 .photo {
