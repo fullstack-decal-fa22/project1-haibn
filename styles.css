@@ -5,6 +5,11 @@ body {
     background-color: black;
 }
 
+.header-container {
+    position: relative;
+    top: 230px;
+}
+
 #header {
     color: white;
     font-size:medium;
@@ -13,7 +18,6 @@ body {
 
     /* position text in the middle of the website */
     position: absolute;
-    top: 38%;
     left: 50%;
     transition: left 1s ease-out 100ms;
     z-index: 2;
