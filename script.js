@@ -1,7 +1,7 @@
 function moveLeft() {
     let headerText = document.querySelector('#header');
     let aboutText = document.querySelectorAll('.aHead, .aBody, .wHead, .wBody');
-    let contactImgs = document.querySelectorAll('.github, .linkedin, .email');
+    let contactImgs = document.querySelectorAll('.github, .linkedin, .instagram');
     let btn = document.querySelector('.btn');
     let moreAboutMe = document.querySelector('.more-about-me-container');
     console.log(aboutText)
@@ -20,7 +20,7 @@ function moveLeft() {
         contactImgs[0].style.transition = "left 0.9s ease-out 100ms, opacity 0.7s, visibility 1s ease-in-out";
         // linkedin 
         contactImgs[1].style.transition = "left 0.8s ease-out 100ms, opacity 0.6s, visibility 1s ease-in-out";
-        // email 
+        // instagram 
         contactImgs[2].style.transition = "left 0.7s ease-out 100ms, opacity 0.5s, visibility 1s ease-in-out";
         
         btn.classList.remove('btn--show');
@@ -40,7 +40,7 @@ function moveLeft() {
         contactImgs[0].style.transition = "left 0.7s ease-out 100ms, opacity 2.8s ease-out 0.03s, visibility 1s ease-in-out";
         // linkedin 
         contactImgs[1].style.transition = "left 0.8s ease-out 100ms, opacity 2.9s ease-out 0.08s, visibility 1s ease-in-out";
-        // email 
+        // instagram 
         contactImgs[2].style.transition = "left 0.9s ease-out 100ms, opacity 3s ease-out 0.13s, visibility 1s ease-in-out";
         
         btn.classList.add('btn--show');
@@ -72,18 +72,18 @@ function changeTheme() {
     let docBody = document.body
     let textColor = document.querySelectorAll('#header, .about, .work');
     let gitImg = document.getElementById('git');
-    let emailImg = document.getElementById('em');
+    let instagramImg = document.getElementById('ig');
     let btn = document.querySelector('button');
     let moreAboutMeText = document.querySelectorAll('.text');
     if (docBody.style.backgroundColor === 'white') {
         docBody.style.backgroundColor = 'black';
         gitImg.src = 'imgs/githubWhite.png';
-        emailImg.src = 'imgs/emailWhite.png';
+        instagramImg.src = 'imgs/igWhite.png';
         btn.style.backgroundColor = 'white';
     } else {
         docBody.style.backgroundColor = 'white';
         gitImg.src = 'imgs/github.png';
-        emailImg.src = 'imgs/email.png';
+        instagramImg.src = 'imgs/ig.png';
         btn.style.backgroundColor = 'black';
     }
     
