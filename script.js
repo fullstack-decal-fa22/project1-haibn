@@ -1,11 +1,11 @@
 function moveLeft() {
-    let headerText = document.querySelector('.header-container');
+    let headerText = document.querySelector('#header');
     let aboutText = document.querySelectorAll('.aHead, .aBody, .wHead, .wBody');
     let contactImgs = document.querySelectorAll('.github, .linkedin, .instagram');
     let btn = document.querySelector('.btn');
     let moreAboutMe = document.querySelector('.more-about-me-container');
     console.log(aboutText)
-    if (headerText.style.left === "30.1%") {
+    if (headerText.style.left === "30%") {
         headerText.style.left = "50%";
 
         // .aHead
@@ -26,7 +26,7 @@ function moveLeft() {
         btn.classList.remove('btn--show');
         moreAboutMe.style.display = 'none';
     } else {
-        headerText.style.left = "30.1%";
+        headerText.style.left = "30%";
         
         // .aHead
         aboutText[0].style.transition = "left 0.9s ease-out 100ms, opacity 1.8s, visibility 1s ease-in-out";
@@ -48,8 +48,8 @@ function moveLeft() {
     }
 
     for (i=0; i<aboutText.length; i++) {
-        if (headerText.style.left === "30.1%") {
-            aboutText[i].style.left = "45%";
+        if (headerText.style.left === "30%") {
+            aboutText[i].style.left = "50%";
             aboutText[i].classList.add('text--show');
         } else {
             aboutText[i].style.left = "35%";
@@ -58,7 +58,7 @@ function moveLeft() {
     }
 
     for (i=0; i<contactImgs.length; i++) {
-        if (headerText.style.left === "30.1%") {
+        if (headerText.style.left === "30%") {
             contactImgs[i].style.left = "-20.1%";
             contactImgs[i].classList.add('img--show');
         } else {

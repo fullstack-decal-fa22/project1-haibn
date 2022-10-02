@@ -5,24 +5,19 @@ body {
     background-color: black;
 }
 
-.header-about-work-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
 .header-container {
-    position: absolute;
-    top: 35vh;
-    left: 50%;
-    transition: left 1s ease-out 100ms;
+    position: relative;
+    top: 230px;
 }
 
 #header {
     color: white;
     font-size:medium;
     font-weight: 100;
+    transform: scale(1, 1.05);
     position: absolute;
+    left: 50%;
+    transition: left 1s ease-out 100ms;
     z-index: 2;
 }
 
@@ -32,31 +27,26 @@ body {
 
 /* ABOUT & WORK SECTION  */
 
-.about-work-container {
-    width: 90vw;
-}
-
 .about, .work{
-    position: relative;
     color: white;
     font-size: medium;
     font-weight: 100;
     transform: scale(1, 1.05);
-    height: 30vh;
+    height: 180px;
     z-index: 1;
 }
 
 .aHead {
-    position: absolute;
-    top: 30px;
+    position: fixed;
+    top: 15%;
     left: 35%;
     opacity: 0;
     visibility: hidden;
 }
 
 .aBody {
-    position: absolute;
-    top: 65px;
+    position: fixed;
+    top: 35%;
     left: 35%;
     opacity: 0;
     visibility: hidden;
@@ -68,16 +58,16 @@ body {
 }
 
 .wHead {
-    position: absolute;
-    top: -15px;
+    position: fixed;
+    top: -10%;
     left: 35%;
     opacity: 0;
     visibility: hidden;
 }
 
 .wBody {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 10%;
     left: 35%;
     opacity: 0;
     visibility: hidden;
@@ -94,8 +84,8 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    position: relative;
-    top: -70px;
+    position: static;
+    z-index: 0;
 }
 
 .contact-img {
@@ -112,7 +102,6 @@ body {
     left: -5%;
     visibility: hidden;
     opacity: 0;
-    z-index: 3;
 }
 
 .linkedin {
@@ -120,7 +109,6 @@ body {
     left: -5%;
     visibility: hidden;
     opacity: 0;
-    z-index: 3;
 }
 
 .instagram {
@@ -128,7 +116,6 @@ body {
     left: -5%;
     visibility: hidden;
     opacity: 0;
-    z-index: 3;
 }
 
 .img--show {
@@ -139,7 +126,6 @@ body {
 /* BUTTON  */
 
 /* ripple effect */
-
 .ripple {
     background-position: center;
     transition: background 0.8s;
@@ -153,7 +139,6 @@ body {
 }
 
 /* button style */
-
 .btn {
     position: absolute;
     top: 2%;
