@@ -5,8 +5,8 @@ function moveLeft() {
     let btn = document.querySelector('.btn');
     let moreAboutMe = document.querySelector('.more-about-me-container');
     console.log(aboutText)
-    if (headerText.style.left === "26%") {
-        headerText.style.left = "45%";
+    if (headerText.style.left === "30.1%") {
+        headerText.style.left = "50%";
 
         // .aHead
         aboutText[0].style.transition = "left 0.9s ease-out 100ms, opacity 0.8s ease-out 0.10s, visibility 1s ease-in-out";
@@ -26,7 +26,7 @@ function moveLeft() {
         btn.classList.remove('btn--show');
         moreAboutMe.style.display = 'none';
     } else {
-        headerText.style.left = "26%";
+        headerText.style.left = "30.1%";
         
         // .aHead
         aboutText[0].style.transition = "left 0.9s ease-out 100ms, opacity 1.8s, visibility 1s ease-in-out";
@@ -48,7 +48,7 @@ function moveLeft() {
     }
 
     for (i=0; i<aboutText.length; i++) {
-        if (headerText.style.left === "26%") {
+        if (headerText.style.left === "30.1%") {
             aboutText[i].style.left = "45%";
             aboutText[i].classList.add('text--show');
         } else {
@@ -58,7 +58,7 @@ function moveLeft() {
     }
 
     for (i=0; i<contactImgs.length; i++) {
-        if (headerText.style.left === "26%") {
+        if (headerText.style.left === "30.1%") {
             contactImgs[i].style.left = "-20.1%";
             contactImgs[i].classList.add('img--show');
         } else {
