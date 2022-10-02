@@ -1,12 +1,12 @@
 function moveLeft() {
-    let headerText = document.querySelector('#header');
+    let headerText = document.querySelector('.header-container');
     let aboutText = document.querySelectorAll('.aHead, .aBody, .wHead, .wBody');
     let contactImgs = document.querySelectorAll('.github, .linkedin, .instagram');
     let btn = document.querySelector('.btn');
     let moreAboutMe = document.querySelector('.more-about-me-container');
     console.log(aboutText)
-    if (headerText.style.left === "30%") {
-        headerText.style.left = "50%";
+    if (headerText.style.left === "26%") {
+        headerText.style.left = "45%";
 
         // .aHead
         aboutText[0].style.transition = "left 0.9s ease-out 100ms, opacity 0.8s ease-out 0.10s, visibility 1s ease-in-out";
@@ -26,7 +26,7 @@ function moveLeft() {
         btn.classList.remove('btn--show');
         moreAboutMe.style.display = 'none';
     } else {
-        headerText.style.left = "30%";
+        headerText.style.left = "26%";
         
         // .aHead
         aboutText[0].style.transition = "left 0.9s ease-out 100ms, opacity 1.8s, visibility 1s ease-in-out";
@@ -48,8 +48,8 @@ function moveLeft() {
     }
 
     for (i=0; i<aboutText.length; i++) {
-        if (headerText.style.left === "30%") {
-            aboutText[i].style.left = "50%";
+        if (headerText.style.left === "26%") {
+            aboutText[i].style.left = "45%";
             aboutText[i].classList.add('text--show');
         } else {
             aboutText[i].style.left = "35%";
@@ -58,7 +58,7 @@ function moveLeft() {
     }
 
     for (i=0; i<contactImgs.length; i++) {
-        if (headerText.style.left === "30%") {
+        if (headerText.style.left === "26%") {
             contactImgs[i].style.left = "-20.1%";
             contactImgs[i].classList.add('img--show');
         } else {

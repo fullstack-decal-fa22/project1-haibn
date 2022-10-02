@@ -8,57 +8,64 @@
     </head>
     <body class = "shell">
         
-        <!-- HI! HEADER -->
-        <div class="header-container">
-            <h6 onclick="moveLeft()" id="header">hi.</h6>
-        </div>
-        
         <!-- ANIMATION/ONCLICK/JAVASCRIPT  -->
         <script src="script.js"></script>
 
-        <!-- ABOUT SECTION  -->
-        <div class="about">
-            <p class="aHead">i am</p>
-            <p class="aBody"><span class="aName">Haibin Yu</span>, an electrical engineering & computer science 
-                student <br> @ UC Berkeley with interests in web development, 
-                design, <br> data science, and software engineering.</p>
+        <div class="header-about-work-container">
+
+            <!-- HI! HEADER -->
+            <div class="header-container">
+                <h6 onclick="moveLeft()" id="header">hi.</h6>
+            </div>
+
+            <div class="about-work-container">
+
+                <!-- ABOUT SECTION  -->
+                <div class="about">
+                    <p class="aHead">i am</p>
+                    <p class="aBody"><span class="aName">Haibin Yu</span>, an electrical engineering & computer science 
+                        student <br> @ UC Berkeley with interests in web development, 
+                        design, <br> data science, and software engineering.</p>
+                </div>
+
+                <!-- WORK SECTION  -->
+                <div class="work">
+                    <p class="wHead">some of my class projects:</p>
+                    <ul class="wBody">
+                        <li>
+                            <span class="wName">Gitlet:</span> Implemented own local version-control system <br>
+                            software with commands commit, branch, log, merge, <br>
+                            & rebase. Java
+                        </li>
+                        <li>
+                            <span class="wName">BearMaps:</span> Implemented a basic maps system with the <br>
+                            use of the shortest path algorithm (A*), MinPQs, and <br>
+                            Trie Trees. Java
+                        </li>
+                        <li>
+                            <span class="wName">CPU:</span> Implemented a 2-stage pipeline logic of a RISC-V <br>
+                            processor. The implementation consisted on building <br> 
+                            everything from the Arithmetic Logic Unit (ALU) to <br> 
+                            the control logic of the CPU supporting instructions all <br> 
+                            the way from addi to csrwi rd. Logisim
+                        </li>
+                        <li>
+                            <span class="wName">Ants:</span> Created a tower defense game inspired by PopCap <br> 
+                            Games' Plants vs Zombies where the player populates its <br> 
+                            colony with the bravest ants to protect its queen from the <br> 
+                            evil bees. Python
+                        </li>
+                        <li>
+                            <span class="wName">Movie Classification:</span> Built a classification model that <br> 
+                            guesses a movie genre by using the number of times <br> 
+                            chosen words appear in the movie's screenplay. Python
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
 
-        <!-- WORK SECTION  -->
-        <div class="work">
-            <p class="wHead">some of my class projects:</p>
-            <ul class="wBody">
-                <li>
-                    <span class="wName">Gitlet:</span> Implemented own local version-control system <br>
-                    software with commands commit, branch, log, merge, <br>
-                    & rebase. Java
-                </li>
-                <li>
-                    <span class="wName">BearMaps:</span> Implemented a basic maps system with the <br>
-                    use of the shortest path algorithm (A*), MinPQs, and <br>
-                    Trie Trees. Java
-                </li>
-                <li>
-                    <span class="wName">CPU:</span> Implemented a 2-stage pipeline logic of a RISC-V <br>
-                    processor. The implementation consisted on building <br> 
-                    everything from the Arithmetic Logic Unit (ALU) to <br> 
-                    the control logic of the CPU supporting instructions all <br> 
-                    the way from addi to csrwi rd. Logisim
-                </li>
-                <li>
-                    <span class="wName">Ants:</span> Created a tower defense game inspired by PopCap <br> 
-                    Games' Plants vs Zombies where the player populates its <br> 
-                    colony with the bravest ants to protect its queen from the <br> 
-                    evil bees. Python
-                </li>
-                <li>
-                    <span class="wName">Movie Classification:</span> Built a classification model that <br> 
-                    guesses a movie genre by using the number of times <br> 
-                    chosen words appear in the movie's screenplay. Python
-                </li>
-            </ul>
-        </div>
-        
         <!-- CONTACT SECTION  -->
         <div class="contact-container">
             <a href="https://github.com/haibn" class="contact github" target="_blank">
